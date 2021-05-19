@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/gitappAkimad/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/gitappAkimad/static/js/main.6e99bb3b.chunk.js",
+    "main.js.map": "/gitappAkimad/static/js/main.6e99bb3b.chunk.js.map",
+    "runtime-main.js": "/gitappAkimad/static/js/runtime-main.d00f7dc3.js",
+    "runtime-main.js.map": "/gitappAkimad/static/js/runtime-main.d00f7dc3.js.map",
+    "static/js/2.14ae51d3.chunk.js": "/gitappAkimad/static/js/2.14ae51d3.chunk.js",
+    "static/js/2.14ae51d3.chunk.js.map": "/gitappAkimad/static/js/2.14ae51d3.chunk.js.map",
+    "static/js/3.cff6aa4b.chunk.js": "/gitappAkimad/static/js/3.cff6aa4b.chunk.js",
+    "static/js/3.cff6aa4b.chunk.js.map": "/gitappAkimad/static/js/3.cff6aa4b.chunk.js.map",
+    "index.html": "/gitappAkimad/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/gitappAkimad/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.14ae51d3.chunk.js.LICENSE.txt": "/gitappAkimad/static/js/2.14ae51d3.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/gitappAkimad/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d00f7dc3.js",
+    "static/js/2.14ae51d3.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.6e99bb3b.chunk.js"
+  ]
+}
