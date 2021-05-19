@@ -7,10 +7,10 @@ import Avatar from '@material-ui/core/Avatar';
 import ImageIcon from '@material-ui/icons/Image';
 import WorkIcon from '@material-ui/icons/Work';
 import BeachAccessIcon from '@material-ui/icons/BeachAccess';
-import ImageAvatars from './avatar';
 import { Link } from 'react-router-dom';
+import ImageAvatars from './avatar';
 
-function ListUsers(props) {
+function ListOrg(props) {
     
     const classes = useStyles();
 
@@ -18,19 +18,17 @@ function ListUsers(props) {
 
         <List className={classes.root}>
 
-          {props.users.map(user =>(
-              <Link to={`/user/${user.login}`} style={{ textDecoration: 'none' ,color:'black'}}>
+          {props.list.map(item =>(
                 <ListItem 
-                  key={user.login}
+                  key={item.id}
                   >
                     <ListItemAvatar>
                         <Avatar>
-                        <ImageAvatars src={user.avatar_url} />
+                            <ImageAvatars src={item.avatar_url} />
                         </Avatar>
                     </ListItemAvatar>
-                    <ListItemText primary={user.login} />
+                    <ListItemText primary={item.login} />
                 </ListItem>
-              </Link>
             ))}
         
         </List>
@@ -46,4 +44,4 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
 
-export default ListUsers
+export default ListOrg

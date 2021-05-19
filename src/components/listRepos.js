@@ -7,10 +7,9 @@ import Avatar from '@material-ui/core/Avatar';
 import ImageIcon from '@material-ui/icons/Image';
 import WorkIcon from '@material-ui/icons/Work';
 import BeachAccessIcon from '@material-ui/icons/BeachAccess';
-import ImageAvatars from './avatar';
 import { Link } from 'react-router-dom';
 
-function ListUsers(props) {
+function ListRepos(props) {
     
     const classes = useStyles();
 
@@ -18,20 +17,21 @@ function ListUsers(props) {
 
         <List className={classes.root}>
 
-          {props.users.map(user =>(
-              <Link to={`/user/${user.login}`} style={{ textDecoration: 'none' ,color:'black'}}>
-                <ListItem 
-                  key={user.login}
-                  >
-                    <ListItemAvatar>
-                        <Avatar>
-                        <ImageAvatars src={user.avatar_url} />
-                        </Avatar>
-                    </ListItemAvatar>
-                    <ListItemText primary={user.login} />
-                </ListItem>
-              </Link>
-            ))}
+            {props.list.map(item =>{
+                console.log("hola");
+                return(
+                    <ListItem 
+                    key={item.id}
+                    >
+                        <ListItemAvatar>
+                            <Avatar>
+                            <WorkIcon />
+                            </Avatar>
+                        </ListItemAvatar>
+                        <ListItemText primary={item.name} />
+                    </ListItem>
+                )
+            })}
         
         </List>
       );
@@ -46,4 +46,4 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
 
-export default ListUsers
+export default ListRepos

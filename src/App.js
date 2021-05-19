@@ -4,8 +4,7 @@ import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 
@@ -18,12 +17,8 @@ function App() {
   return (
 <Router>
       <div>
-     
-
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/user">
+          <Route path="/user/:id">
             <User />
           </Route>
           <Route path="/">

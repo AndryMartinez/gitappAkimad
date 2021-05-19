@@ -3,16 +3,21 @@ import { makeStyles } from '@material-ui/core/styles';
 import SearchIcon from '@material-ui/icons/Search';
 import { fade } from '@material-ui/core/styles';
 
-function Search({submit}) {
+function Search({submit,load, style}) {
     const classes = useStyles();
     return (
-        <div className={classes.search}>
+        <div style={style} className={classes.search}>
             <div className={classes.searchIcon}>
               <SearchIcon />
             </div>
             <InputBase
               placeholder="Search…"
-              onChange={event=>submit(event.target.value)}
+              disabled={!load}
+              onKeyDown={event=>{
+                if(event.keyCode == 13 && load){
+                  submit(event.target.value)
+                }
+              }}
               classes={{
                 root: classes.inputRoot,
                 input: classes.inputInput,
